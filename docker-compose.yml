@@ -1,0 +1,11 @@
+services:
+  youtube-splitter:
+    build: .
+    volumes:
+      - ./raw_videos:/app/raw_videos
+      - ./splitted_audios:/app/splitted_audios
+    environment:
+      - TF_CPP_MIN_LOG_LEVEL=2
+      - PYTHONWARNINGS=ignore
+    stdin_open: true
+    tty: true
