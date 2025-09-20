@@ -1,5 +1,5 @@
 services:
-  youtube-splitter:
+  youtube-voice-analizer:
     build: .
     volumes:
       - ./raw_videos:/app/raw_videos
