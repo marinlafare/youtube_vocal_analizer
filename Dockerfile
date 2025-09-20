@@ -10,6 +10,6 @@ RUN pip install --no-cache-dir -r requirements.txt
 
 RUN mkdir -p raw_videos splitted_audios
 
-COPY main.py .
+COPY main.py plot_notes.py pitch_algorithm.py .
 
 CMD ["python", "main.py"]
