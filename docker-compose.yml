@@ -4,8 +4,10 @@ services:
     volumes:
       - ./raw_videos:/app/raw_videos
       - ./splitted_audios:/app/splitted_audios
+      - ./note_plots:/app/note_plots
     environment:
       - TF_CPP_MIN_LOG_LEVEL=2
       - PYTHONWARNINGS=ignore
     stdin_open: true
     tty: true
+    command: python main.py
